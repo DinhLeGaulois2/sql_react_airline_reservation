@@ -3,11 +3,11 @@ import axios from "axios"
 export default class ReadData {
     constructor(){ }
 
-    setPassengers = () => {
+    displayPassengers = () => {
         return axios.get("/api/get/passengers")
     }
 
-    setBookings = () => {
+    displayBookings = () => {
         return axios.get("/api/get/bookings")
     }
 }

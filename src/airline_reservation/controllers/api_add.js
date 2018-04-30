@@ -2,10 +2,10 @@ import axios from "axios"
 
 export default class AddData {
     constructor(){ }
+
     
     addBooking= (data) => {
-        let anArray = []
-        return axios.post("/api/add/booking", anArray)
+        return axios.post("/api/add/booking", data)
     }
 
     addPassenger= (data) => {
